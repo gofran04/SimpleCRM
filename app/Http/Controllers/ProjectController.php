@@ -21,14 +21,6 @@ class ProjectController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(StoreProjectRequest $request)
@@ -47,14 +39,6 @@ class ProjectController extends Controller
     {
         $this->authorize('view-project');
         return new ProjectResource($project);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Project $project)
-    {
-        //
     }
 
     /**

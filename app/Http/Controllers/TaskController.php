@@ -26,14 +26,6 @@ class TaskController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        // There in No create() it is api only
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(StoreTaskRequest $request)
@@ -71,14 +63,6 @@ class TaskController extends Controller
     {
         $this->authorize('view-task');
         return new TaskResource($task);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Task $task)
-    {
-        // There in No edit() it is api only
     }
 
     /**
